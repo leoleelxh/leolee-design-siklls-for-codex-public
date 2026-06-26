@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Design"
+  short_description: "Codex-first design direction and visual QA"
+  default_prompt: "Use $agent-design to design and implement a polished UI with image-first exploration and designer-grade QA."

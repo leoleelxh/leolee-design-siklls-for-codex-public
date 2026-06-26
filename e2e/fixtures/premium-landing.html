@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Northline Studio</title>
+    <meta
+      name="description"
+      content="A local fixture used to verify Agent Design visual QA checks."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #111827;
+        --muted: #5b6472;
+        --paper: #f7f7f4;
+        --surface: #ffffff;
+        --line: #d9ddd6;
+        --accent: #1f6f5f;
+        --accent-dark: #123f37;
+        --radius: 18px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 18% 16%, rgba(31, 111, 95, 0.12), transparent 28rem),
+          linear-gradient(180deg, #fafaf7 0%, var(--paper) 100%);
+        color: var(--ink);
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        min-height: 72px;
+      }
+
+      .brand {
+        font-weight: 720;
+        letter-spacing: -0.02em;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+        align-items: center;
+        gap: clamp(32px, 7vw, 88px);
+        min-height: calc(100dvh - 72px);
+        padding: 48px 0 76px;
+      }
+
+      .eyebrow {
+        width: fit-content;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 12px;
+        color: var(--accent-dark);
+        background: rgba(255, 255, 255, 0.68);
+        font-size: 0.82rem;
+      }
+
+      h1 {
+        margin: 22px 0 20px;
+        max-width: 760px;
+        font-size: clamp(3.2rem, 8vw, 7.5rem);
+        line-height: 0.92;
+        letter-spacing: -0.055em;
+      }
+
+      .lede {
+        max-width: 58ch;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+        line-height: 1.6;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 32px;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 48px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 0 20px;
+        text-decoration: none;
+        font-weight: 680;
+        transition:
+          transform 180ms ease,
+          background 180ms ease;
+      }
+
+      .button:focus-visible {
+        outline: 3px solid rgba(31, 111, 95, 0.36);
+        outline-offset: 3px;
+      }
+
+      .button:active {
+        transform: translateY(1px);
+      }
+
+      .button-primary {
+        background: var(--accent);
+        color: white;
+      }
+
+      .button-primary:hover {
+        background: var(--accent-dark);
+      }
+
+      .button-secondary {
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--ink);
+      }
+
+      .visual {
+        position: relative;
+        min-height: 560px;
+      }
+
+      .plate {
+        position: absolute;
+        border-radius: var(--radius);
+        background: var(--surface);
+        box-shadow: 0 34px 90px rgba(17, 24, 39, 0.14);
+        overflow: hidden;
+      }
+
+      .plate-large {
+        inset: 0 8% 12% 0;
+        display: grid;
+        align-content: end;
+        padding: clamp(28px, 4vw, 44px);
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.36)),
+          linear-gradient(145deg, #dfe9df 0%, #b8ccc4 48%, #24453e 100%);
+      }
+
+      .plate-small {
+        right: 0;
+        bottom: 0;
+        width: min(68%, 390px);
+        padding: 22px;
+      }
+
+      .metric {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        border-top: 1px solid var(--line);
+        padding-top: 18px;
+        color: var(--muted);
+      }
+
+      .metric strong {
+        color: var(--ink);
+        font-size: 2rem;
+        letter-spacing: -0.04em;
+      }
+
+      .caption {
+        max-width: 26ch;
+        color: #ffffff;
+        font-size: clamp(1.4rem, 3vw, 2.35rem);
+        line-height: 1.04;
+        letter-spacing: -0.045em;
+      }
+
+      .section {
+        padding: 90px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 22px;
+      }
+
+      .feature {
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.72);
+        padding: clamp(24px, 4vw, 42px);
+      }
+
+      .feature h2,
+      .feature h3 {
+        margin: 0 0 14px;
+        letter-spacing: -0.04em;
+      }
+
+      .feature h2 {
+        font-size: clamp(2.2rem, 5vw, 4.4rem);
+        line-height: 0.98;
+      }
+
+      .feature p {
+        max-width: 58ch;
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      @media (max-width: 800px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 18px 0;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+        }
+
+        .hero,
+        .feature-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-top: 34px;
+        }
+
+        .visual {
+          min-height: 420px;
+        }
+
+        .plate-large {
+          inset: 0 0 18% 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shell nav">
+      <div class="brand">Northline Studio</div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/work">Work</a>
+        <a href="/method">Method</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">Design direction for teams that ship</p>
+          <h1 id="hero-title">Interfaces with a point of view.</h1>
+          <p class="lede">
+            Northline turns product strategy into screens that feel clear, composed, and ready for real users.
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="/start">Start a design pass</a>
+            <a class="button button-secondary" href="/case-studies">View selected work</a>
+          </div>
+        </div>
+
+        <div class="visual" aria-label="Layered abstract studio board">
+          <div class="plate plate-large">
+            <p class="caption">A calmer first screen, a sharper second read.</p>
+          </div>
+          <div class="plate plate-small">
+            <div class="metric">
+              <span>Prototype review</span>
+              <strong>4.7</strong>
+            </div>
+            <p>
+              Navigation, state design, contrast, and responsive behavior checked before handoff.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="feature-grid">
+          <article class="feature">
+            <h2>Design systems that agents can actually follow.</h2>
+            <p>
+              The workflow extracts visual rules, then tests the implemented page in a browser so the final screen stays close to the intended direction.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Built-in QA</h3>
+            <p>
+              Desktop and mobile checks catch overflow, missing alt text, weak CTA contrast, and common placeholder patterns.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
