@@ -2,6 +2,7 @@
   "name": "agent-design-skill",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "Codex-first design skill with deterministic contract checks and optional visual QA.",
   "type": "module",
   "scripts": {

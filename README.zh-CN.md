@@ -29,6 +29,16 @@
 
 ![从概念板到产品 UI 的参考图](docs/assets/reference-concept-board.webp)
 
+## 配合 A2F 实现 HTML 到 Figma
+
+这个 skill 可以配合 [A2F Figma 插件](https://www.figma.com/community/plugin/1645412835513678534/a2f-any-html-website-to-figma-import-websites-to-figma-designs-web-html-css)，把 HTML 网站转换成可编辑的 Figma 图层。在这个流程里，Codex 可以先构建或调整 HTML 实现，完成视觉 QA，然后把本地 URL 或 HTML payload 准备给 A2F 导入。
+
+![A2F 插件概览](docs/assets/a2f-plugin-overview.webp)
+
+A2F 适合用于需要可编辑 Figma 结构的交付，而不是只交付一张扁平截图；例如 live text、嵌入图片、SVG/vector 元素和更接近 auto-layout 的 frame 结构。
+
+![A2F 插件界面](docs/assets/a2f-plugin-ui.webp)
+
 ## 仓库结构
 
 ```text
@@ -135,4 +145,6 @@ $env:TARGET_URL="http://localhost:3000"; npm run test:e2e
 - Agent Skills Hub AI Design list: https://agentskillshub.top/best/ai-design/
 - Dominik Kundel 的 Codex image-first design-to-app 想法: https://x.com/dkundel/status/2049591675518165134
 
-公开发布前，请根据你的预期使用方式在仓库根目录补充合适的 `LICENSE`。
+## License
+
+MIT。见 [LICENSE](LICENSE)。

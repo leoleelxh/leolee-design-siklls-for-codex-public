@@ -13,7 +13,7 @@ Use these categories when explaining what this skill absorbed and when expanding
 | High-fidelity delivery bench | Huashu Design, Open Design | HTML-native high-fidelity prototypes, local-first design delivery, animation-rich previews |
 | Design system preservation | Google Stitch Skills, Design DNA, Hue, design-extract | Tokens, design DNA, component systems, style extraction, reusable libraries |
 | Inspiration and resource libraries | awesome-design-skills, awesome-claude-design | Ecosystem survey, aesthetic references, community patterns |
-| HTML/DOM to editable Figma | BuilderIO/figma-html, lgs/html-figma, sergcen/html-to-figma, cranch42/h2d-capture | Convert rendered DOM/computed styles into editable Figma nodes or clipboard payloads |
+| HTML/DOM to editable Figma | A2F Figma plugin, BuilderIO/figma-html, lgs/html-figma, sergcen/html-to-figma, cranch42/h2d-capture | Convert rendered DOM/computed styles into editable Figma nodes or clipboard payloads |
 
 ## Primary References
 
@@ -62,6 +62,7 @@ These were used as inspiration categories and release attribution, not as copied
 | Mck-ppt-design-skill | https://github.com/likaku/Mck-ppt-design-skill | Consulting-style PowerPoint design system |
 | typeui.sh | https://github.com/bergside/typeui.sh | Design-system skill CLI |
 | Codex Build Web Apps plugin/workflows | Codex ecosystem, local availability varies | Code-native app construction from visual direction and browser feedback |
+| A2F Figma plugin | https://www.figma.com/community/plugin/1645412835513678534/a2f-any-html-website-to-figma-import-websites-to-figma-designs-web-html-css | User-run HTML/website to editable Figma import path |
 | BuilderIO figma-html | https://github.com/BuilderIO/figma-html | Website to editable Figma, MIT, moved toward Builder.io extension |
 | lgs html-figma | https://github.com/lgs/html-figma | Figma plugin/chrome extension, `htmlToFigma(document.body)` library path, known best-effort limitations |
 | sergcen html-to-figma | https://github.com/sergcen/html-to-figma | WIP DOM node to Figma node library with browser and Figma-side functions |

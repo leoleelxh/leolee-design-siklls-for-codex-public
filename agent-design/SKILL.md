@@ -107,6 +107,8 @@ If Figma tooling is unavailable, produce a Figma-ready handoff instead: frames, 
 
 For editable Figma output, prefer direct Figma construction when Figma tools/MCP are available. Otherwise use an HTML/DOM-to-Figma capture path when available: run the implementation locally, capture rendered DOM/computed styles into Figma-native nodes, then normalize variables, components, auto-layout, and layer names. Do not claim a flat screenshot is an editable Figma deliverable. Read [references/figma-export.md](references/figma-export.md).
 
+When the user can use the A2F Figma plugin, treat it as a supported HTML-to-Figma path: prepare a clean local URL or HTML payload, document A2F import steps, then record the path in `design/figma-export.json` as `dom-to-figma`.
+
 If Figma is requested and no native Figma MCP/tool is callable, do not stop at handoff until you have evaluated an HTML/DOM-to-Figma path. Record the path decision in `design/figma-export.json`: `direct-figma`, `dom-to-figma`, or `handoff-only`, with attempted tools and limitations. Do not claim an official `.fig` file unless a real Figma tool/file export path created one.
 
 When Codex cannot directly run the Figma import, the final response must include a `Figma import instructions` section for the user: plugin/package path, Figma Desktop steps, local URL or payload file, expected result, and limitations. Treat this as required delivery content, not optional guidance.

@@ -50,6 +50,7 @@ Use when code exists and an open-source DOM-to-Figma path is available.
 
 Open-source references researched:
 
+- A2F Figma plugin: community plugin for converting HTML/websites into editable Figma layers. Use it as a user-run import path when the user has the plugin available: prepare the local URL or HTML payload, include import steps, and record the path as `dom-to-figma`.
 - BuilderIO `figma-html`: GitHub project for converting websites to editable Figma designs; moved toward Builder.io extension, MIT licensed, and documents that conversion is best-effort.
 - `lgs/html-figma`: plugin/fork exposing plugin and chrome-extension structure; README shows importing a URL, Storybook capture, and `htmlToFigma(document.body)` usage.
 - `sergcen/html-to-figma`: WIP library that converts DOM nodes to Figma nodes via `htmlTofigma(element)` and `addLayersToFrame(...)`.
@@ -92,7 +93,7 @@ Required `figma-export.json` shape:
   "created_file_or_link": null,
   "dom_to_figma": {
     "local_url": "http://localhost:5173",
-      "tool": "BuilderIO/figma-html | lgs/html-figma | sergcen/html-to-figma | h2d-capture | other",
+      "tool": "A2F | BuilderIO/figma-html | lgs/html-figma | sergcen/html-to-figma | h2d-capture | other",
       "payload": "design/figma/html-to-figma.json",
       "import_instructions": "design/figma/import-instructions.md"
   },

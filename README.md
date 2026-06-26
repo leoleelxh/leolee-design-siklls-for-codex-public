@@ -29,6 +29,16 @@ Concept boards can also drive implementation planning. The process separates vis
 
 ![Concept-board-to-product-ui reference](docs/assets/reference-concept-board.webp)
 
+## HTML To Figma With A2F
+
+This skill can pair with the [A2F Figma plugin](https://www.figma.com/community/plugin/1645412835513678534/a2f-any-html-website-to-figma-import-websites-to-figma-designs-web-html-css) to convert HTML websites into editable Figma layers. In that workflow, Codex can build or refine the HTML implementation, run visual QA, then prepare the local URL or HTML payload for A2F import.
+
+![A2F plugin overview](docs/assets/a2f-plugin-overview.webp)
+
+A2F is useful when the desired handoff is not a flat screenshot, but editable Figma structure such as live text, embedded images, SVG/vector elements, and auto-layout-friendly frames.
+
+![A2F plugin interface](docs/assets/a2f-plugin-ui.webp)
+
 ## Repository Structure
 
 ```text
@@ -135,4 +145,6 @@ Primary references:
 - Agent Skills Hub AI Design list: https://agentskillshub.top/best/ai-design/
 - Dominik Kundel's Codex image-first design-to-app idea: https://x.com/dkundel/status/2049591675518165134
 
-Before public release, choose a license that matches your intended usage and add it at the repository root.
+## License
+
+MIT. See [LICENSE](LICENSE).
