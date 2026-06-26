@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Test output
+playwright-report/
+test-results/
+coverage/
+
+# Generated local artifacts
+output/
+website/
+dist/
+build/
+.next/
+
+# Environment and local machine files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log

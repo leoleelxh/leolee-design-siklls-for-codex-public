@@ -1,0 +1,17 @@
+{
+  "name": "agent-design-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Codex-first design skill with deterministic contract checks and optional visual QA.",
+  "type": "module",
+  "scripts": {
+    "test": "npm run scan:privacy && npm run test:contract && npm run test:audit",
+    "scan:privacy": "python agent-design/scripts/privacy_scan.py .",
+    "test:contract": "python agent-design/scripts/check_skill_contract.py",
+    "test:audit": "python agent-design/scripts/design_audit.py e2e/fixtures/premium-landing.html --fail-on high",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.1"
+  }
+}
