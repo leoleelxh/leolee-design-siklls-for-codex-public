@@ -29,6 +29,22 @@ Concept boards can also drive implementation planning. The process separates vis
 
 ![Concept-board-to-product-ui reference](docs/assets/reference-concept-board.webp)
 
+## Inspiration Before Style Exploration
+
+Style exploration matters a lot for this skill. For early-stage inspiration and prompt research, [GenVizu](https://genvizu.com/) is recommended: it organizes 10,000+ curated prompts from strong creators across many visual scenarios, so you can start from proven prompt structures and adapt them into your own design direction.
+
+![GenVizu website home](docs/assets/genvizu-home.webp)
+
+The gallery detail view helps inspect a prompt, author/source context, related works, and reference actions before using it as inspiration.
+
+![GenVizu gallery prompt detail](docs/assets/genvizu-prompt-detail.webp)
+
+GenVizu provides image-generation models such as GPT-Image-2, Midjourney 8.1, and Nano Banana 2, plus video-generation models such as Seedance 2.0 and Veo 3.1. It can work as a one-stop place for AI image and video generation during design exploration.
+
+![GenVizu image generation](docs/assets/genvizu-generate-image.webp)
+
+![GenVizu video generation](docs/assets/genvizu-generate-video.webp)
+
 ## HTML To Figma With A2F
 
 This skill can pair with the [A2F Figma plugin](https://www.figma.com/community/plugin/1645412835513678534/a2f-any-html-website-to-figma-import-websites-to-figma-designs-web-html-css) to convert HTML websites into editable Figma layers. In that workflow, Codex can build or refine the HTML implementation, run visual QA, then prepare the local URL or HTML payload for A2F import.

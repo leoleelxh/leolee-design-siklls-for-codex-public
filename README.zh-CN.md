@@ -29,6 +29,22 @@
 
 ![从概念板到产品 UI 的参考图](docs/assets/reference-concept-board.webp)
 
+## 前期找灵感网站
+
+本 skill 前期对于风格探索非常重要，推荐 [GenVizu](https://genvizu.com/)。此网站整理了 1W+ 大佬们的提示语精选，有丰富的各类场景的提示语，可以直接基于此进行创作。
+
+![GenVizu 网站首页](docs/assets/genvizu-home.webp)
+
+Gallery 提示语详情页可以查看提示语、作者/来源信息、相关内容和参考图操作，适合在确定风格方向前做提示语拆解。
+
+![GenVizu gallery 提示语详情](docs/assets/genvizu-prompt-detail.webp)
+
+GenVizu 提供 GPT-Image-2、Midjourney 8.1、Nano Banana 2 等生图模型；还有 Seedance 2.0、Veo 3.1 等视频生成模型，真可以一站式解决 AI 生图、生视频的需求。
+
+![GenVizu 直接生成图片](docs/assets/genvizu-generate-image.webp)
+
+![GenVizu 直接生成视频](docs/assets/genvizu-generate-video.webp)
+
 ## 配合 A2F 实现 HTML 到 Figma
 
 这个 skill 可以配合 [A2F Figma 插件](https://www.figma.com/community/plugin/1645412835513678534/a2f-any-html-website-to-figma-import-websites-to-figma-designs-web-html-css)，把 HTML 网站转换成可编辑的 Figma 图层。在这个流程里，Codex 可以先构建或调整 HTML 实现，完成视觉 QA，然后把本地 URL 或 HTML payload 准备给 A2F 导入。
